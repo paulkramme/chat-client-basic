@@ -27,7 +27,7 @@ int main(void)
 	{
 		bzero(sendline, 256);
 		/*scanf("%s", sendline);*/
-		getline(sendline, 256, stdin);
+		fgets(sendline, sizeof(sendline), stdin);
 		if(strcmp("/exit", sendline) == 0)
 		{
 			puts("Exiting...");
