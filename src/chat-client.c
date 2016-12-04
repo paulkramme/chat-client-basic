@@ -26,7 +26,6 @@ int main(void)
 	while(1)
 	{
 		bzero(sendline, 256);
-		/*scanf("%s", sendline);*/
 		fgets(sendline, 256, stdin);
 		if(strcmp("/exit", sendline) == 0)
 		{
