@@ -32,7 +32,6 @@ int main(void)
 			puts("Exiting...");
 			return 0;
 		}
-		puts(sendline);
 		write(client_socket, sendline, strlen(sendline) + 1);
 	}
 }
