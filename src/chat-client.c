@@ -10,7 +10,7 @@ int main(void)
 {
 	int readcheck = 0;
 	char ipaddress[100];
-	printf("Connect to: ");
+	printf("Connect to IP: ");
 	scanf("%s", ipaddress);
 	printf("\n");
 	int client_socket;
