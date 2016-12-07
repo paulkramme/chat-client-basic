@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int readcheck = 0;
+	/*int readcheck = 0;*/
 	char ipaddress[100];
 	printf("Connect to IP: ");
 	scanf("%s", ipaddress);
