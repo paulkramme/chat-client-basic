@@ -6,13 +6,14 @@
 #include<unistd.h>
 
 
-int main(void)
+int main(int argc, char *argv[])
 {
-	/*int readcheck = 0;*/
+    /*
 	char ipaddress[100];
 	printf("Connect to IP: ");
 	scanf("%s", ipaddress);
 	printf("\n");
+	*/
 	int client_socket;
 	char sendline[256];
 	char input[256];
@@ -21,7 +22,7 @@ int main(void)
 	memset(&servaddr, '\0', sizeof(servaddr));
 	servaddr.sin_family = AF_INET;
 	servaddr.sin_port = htons(8000);
-	inet_pton(AF_INET, ipaddress, &servaddr, sizeof(servaddr));
+	inet_pton(AF_INET, argv[1], &servaddr, sizeof(servaddr));
 	connect(client_socket, (struct sockaddr *) &servaddr, sizeof(servaddr));
 	while(1)
 	{
