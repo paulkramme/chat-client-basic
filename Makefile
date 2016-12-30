@@ -1,2 +1,2 @@
 all:
-	gcc src/chat-client.c -o chatclient
+	clang -Weverything src/chat-client.c -o chatclient
