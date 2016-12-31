@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	*/
 	int client_socket;
 	char sendline[256];
-	char input[256];
+	/*char input[256];*/
 	struct sockaddr_in servaddr;
 	client_socket = socket(AF_INET, SOCK_STREAM, 0);
 	memset(&servaddr, '\0', sizeof(servaddr));
