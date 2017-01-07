@@ -8,12 +8,6 @@
 
 int main(int argc, char *argv[])
 {
-    /*
-	char ipaddress[100];
-	printf("Connect to IP: ");
-	scanf("%s", ipaddress);
-	printf("\n");
-	*/
 	int client_socket;
 	char sendline[256];
 	/*char input[256];*/
