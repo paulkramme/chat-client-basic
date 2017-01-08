@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		fgets(sendline, 256, stdin);
 		if(strcmp("/exit", sendline) == 0)
 		{
-			puts("Exiting...");
+			puts("Exit.");
 			return 0;
 		}
 		write(client_socket, sendline, strlen(sendline) + 1);
