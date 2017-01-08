@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 		if(strcmp("/exit", sendline) == 0)
 		{
 			puts("Exit.");
-			close(client_socket)
+			close(client_socket);
 			return 0;
 		}
 		write(client_socket, sendline, strlen(sendline) + 1);
