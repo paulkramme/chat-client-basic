@@ -29,6 +29,7 @@ int main(int argc, char *argv[])
 		}
 		write(client_socket, sendline, strlen(sendline) + 1);
 	}
+	return 0;
 }
 		
 		
